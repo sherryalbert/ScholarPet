@@ -153,6 +153,21 @@ ctranslate2、onnxruntime，约 467 MB / 331 个文件）。把 exe 单独拷出
 
 对方需要 Windows 10/11 x64；程序首次启动会在 `%LOCALAPPDATA%\ScholarPet` 写设置文件。
 
+## 更新与发版
+
+改完代码怎么提交、怎么重新打包、怎么发下一个版本，见 [`docs/UPDATING.md`](docs/UPDATING.md)：
+
+```powershell
+# 日常改动
+..\..\work\.venv\Scripts\python.exe -m pytest -q      # 84 个用例
+git add -A && git commit -m "fix: ..." && git push
+
+# 要发新版
+powershell -ExecutionPolicy Bypass -File scripts\build.ps1   # 出 dist\ScholarPet-Windows-x64.zip
+```
+
+`dist/`、`models/` 里的模型和 `work/.venv` 都在 `.gitignore` 里 —— **能靠脚本重新生成的东西不进 Git**。
+
 ## 授权与素材
 
 **源代码**以 MIT 授权，见 [`LICENSE`](LICENSE)。依赖与模型的许可见
