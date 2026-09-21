@@ -1,0 +1,7 @@
+PySide6-Essentials==6.11.2
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.30.0
+numpy==2.5.3
+requests==2.34.2
+ctranslate2==4.8.2
+sentencepiece==0.2.2

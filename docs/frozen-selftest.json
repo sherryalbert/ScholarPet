@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "frozen": true,
+  "executable": "C:\\Users\\SherryAlbert\\Documents\\Codex\\2026-09-20\\ieee-skill-github\\outputs\\ScholarPet\\dist\\ScholarPet\\ScholarPet.exe",
+  "python": "3.12.14",
+  "results": [
+    {
+      "check": "qt_core",
+      "ok": true,
+      "detail": "Qt 6.11.2",
+      "seconds": 0.0
+    },
+    {
+      "check": "qapplication",
+      "ok": true,
+      "detail": "platform=windows",
+      "seconds": 0.05
+    },
+    {
+      "check": "widgets",
+      "ok": true,
+      "detail": "constructed: Pet, Reader, SettingsDialog, SelectionPopup, TrayIcon",
+      "seconds": 1.36
+    },
+    {
+      "check": "pet_avatar",
+      "ok": true,
+      "detail": "1254x1254 with alpha",
+      "seconds": 0.0
+    },
+    {
+      "check": "face_rig",
+      "ok": true,
+      "detail": "1254x1254 rig · blink 3.3% of pixels · mouth 0.4%",
+      "seconds": 0.0
+    },
+    {
+      "check": "selection_monitor",
+      "ok": true,
+      "detail": "windows_api=True",
+      "seconds": 0.0
+    },
+    {
+      "check": "offline_translation",
+      "ok": true,
+      "detail": "model=translate-en_zh-1_9 · 本地离线 · Argos EN→ZH · 含术语校正 -> 波束成形提高了信干噪比.",
+      "seconds": 0.52
+    },
+    {
+      "check": "ocr",
+      "ok": true,
+      "detail": "recognised 1 block(s): Beamforming improves signal quality.",
+      "seconds": 3.0
+    },
+    {
+      "check": "tls",
+      "ok": true,
+      "detail": "OpenSSL 3.5.8 25 Aug 2026",
+      "seconds": 0.0
+    },
+    {
+      "check": "data_dir",
+      "ok": true,
+      "detail": "C:\\Users\\SherryAlbert\\AppData\\Local\\ScholarPet",
+      "seconds": 0.2
+    }
+  ]
+}

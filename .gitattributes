@@ -1,0 +1,22 @@
+# Normalise line endings in the repository.  Windows users get CRLF back on
+# checkout for the shell/build scripts, which is what PowerShell expects.
+* text=auto
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Never let Git treat binary payloads as text: a text diff on these produces
+# garbage in review and can corrupt them on checkout.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.exe binary
+*.dll binary
+*.zip binary
+*.bin binary
+*.model binary
+*.pt binary
+*.argosmodel binary
+
+# Keep the documentation screenshots out of language statistics.
+docs/*.png linguist-documentation

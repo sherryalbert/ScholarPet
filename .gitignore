@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build outputs. `build/` also holds pytest's basetemp (see scripts/build.ps1).
+build/
+dist/
+artifacts/
+QtTest.spec
+
+# The English->Chinese model is ~82 MB and would dominate the repository's
+# history, so it is not version controlled.  Fetch it with:
+#     python scripts/fetch_model.py
+# `models/README.md` is kept on purpose: it explains the above to anyone who
+# clones and wonders why the offline engine cannot find a model.
+models/*
+!models/README.md
+*.argosmodel
+
+# Local state.  API keys are stored DPAPI-encrypted in the user's profile and
+# must never be committed.
+settings.json
+*.key
+.env
+.env.*
+
+*.log
+*.zip
