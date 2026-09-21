@@ -4,6 +4,16 @@
 
 它把截图和 OCR 留在这台电脑上，只把识别出的文字发给翻译服务。默认使用随项目提供的 Argos 英中离线模型，不需要网络也不需要 API Key；也可以在设置里切到 Google 实验性接口，或你自己的 DeepSeek / OpenAI 兼容 API。
 
+## 下载
+
+**[点这里下载最新版 ScholarPet-Windows-x64.zip（约 215 MB）](https://github.com/sherryalbert/ScholarPet/releases/latest)**
+
+解压到任意目录，双击里面的 `ScholarPet.exe` 就能用，**不需要安装 Python**。首次运行 Windows 会弹 SmartScreen 蓝框，点「更多信息」→「仍要运行」。系统要求 Windows 10 / 11 64 位。
+
+> **右上角绿色的 `Code` → `Download ZIP` 下的是源代码，不是软件。**
+> 那是给开发者的：里面只有 `.py` 文件，要自己装 Python 3.12、装依赖、下模型才能跑起来。
+> 只想用软件的话，请用上面这个 Releases 链接。原因见 [`docs/UPDATING.md`](docs/UPDATING.md#三绝对不能提交的东西)。
+
 ## 界面
 
 划词翻译浮窗，出现在鼠标旁边，不遮挡你选中的那句话：
